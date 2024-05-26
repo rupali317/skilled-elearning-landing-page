@@ -7,13 +7,13 @@ export const Courses = () => {
         <img src={item.image} alt="" role="presentation"></img>
         <h3>{item.title}</h3>
         <p>{item.description}</p>
-        <a href="#course-list-section">Get started</a>
+        <a href="#course-list-section">Get Started</a>
       </li>
     );
   });
 
   return (
-    <section>
+    <section id="course-list-section">
       <h2>Check out our most popular courses!</h2>
       <ul>{courses}</ul>
     </section>

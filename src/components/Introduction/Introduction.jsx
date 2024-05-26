@@ -2,7 +2,7 @@ import { TABLET_WIDTH, DESKTOP_WIDTH } from "../../constants/Breakpoints";
 
 export const Introduction = () => {
   return (
-    <section>
+    <section id="introduction-section">
       <h1>Maximize skill, minimize budget</h1>
       <p>
         Our modern courses across a range of in-demand skills will give you the
@@ -12,16 +12,16 @@ export const Introduction = () => {
       {/* RRC: Revisit if webp or png should be used. Weigh the pros and cons */}
       <picture>
         <source
-          srcset="/assets/image-hero-desktop.png 1x, /assets/image-hero-desktop@2x.png 2x"
+          srcSet="/assets/image-hero-desktop.png 1x, /assets/image-hero-desktop@2x.png 2x"
           media={`(min-width:${DESKTOP_WIDTH})`}
         ></source>
         <source
-          srcset="/assets/image-hero-tablet.png 1x, /assets/image-hero-tablet@2x.png 2x"
+          srcSet="/assets/image-hero-tablet.png 1x, /assets/image-hero-tablet@2x.png 2x"
           media={`(min-width:${TABLET_WIDTH})`}
         ></source>
         <img
           src="/assets/image-hero-mobile.png"
-          srcset="/assets/image-hero-mobile.png 1x, /assets/image-hero-mobile@2x.png 2x"
+          srcSet="/assets/image-hero-mobile.png 1x, /assets/image-hero-mobile@2x.png 2x"
           alt=""
           role="presentation"
         ></img>
