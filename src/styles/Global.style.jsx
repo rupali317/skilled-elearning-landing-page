@@ -14,6 +14,8 @@ export const BaseStyles = createGlobalStyle`
         --color-neutral-3: hsl(234, 53%, 16%); /* #13183F */
         --color-neutral-4: hsl(233, 10%, 56%); /* #83869A */
         --color-neutral-5: hsl(234, 25%, 52%); /* #666CA3 */
+        --color-neutral-6: hsl(0, 0%, 100%, 0.5); /* #FFFFFF opacity 50% */
+
 
         /* Font sizes */
         --font-size-xxxs: 1rem; /* 16px */
@@ -199,10 +201,19 @@ export const DefaultStyles = createGlobalStyle`
         font-weight: var(--font-weight-medium);
     }
 
-    header {
+    header,
+    footer {
         display: flex;
         justify-content: space-between;
-        padding: var(--space-xs-1);
         align-items: center;
+    }
+
+    header {
+        padding: var(--space-xs-1);
+    }
+
+    footer {
+        padding: var(--space-m-1) var(--space-xs-1);
+        background-color: var(--color-neutral-3);
     }
 `;
