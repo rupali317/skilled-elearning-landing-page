@@ -198,4 +198,11 @@ export const DefaultStyles = createGlobalStyle`
         font-family: "Plus Jakarta Sans";
         font-weight: var(--font-weight-medium);
     }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--space-xs-1);
+        align-items: center;
+    }
 `;

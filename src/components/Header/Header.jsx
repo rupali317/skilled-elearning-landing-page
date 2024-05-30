@@ -1,14 +1,17 @@
+import * as HeaderStyles from "../../styles/Header.style";
+
 export const Header = () => {
   return (
     <>
-      <a href="#introduction-section">
-        <img
-          src="/assets/logo-dark.svg"
-          alt="skilled logo"
-          aria-label="skilled logo - header"
-        ></img>
-      </a>
-      <a href="#course-list-section">Get Started</a>
+      <HeaderStyles.Logo
+        href="#introduction-section"
+        aria-label="Skilled logo - header"
+      >
+        skilled
+      </HeaderStyles.Logo>
+      <HeaderStyles.GetStartedLink href="#course-list-section">
+        Get Started
+      </HeaderStyles.GetStartedLink>
     </>
   );
 };
