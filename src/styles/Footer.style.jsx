@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const GetStartedLink = styled.a`
-  position: relative;
   font-size: var(--font-size-xxxs);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-base);
