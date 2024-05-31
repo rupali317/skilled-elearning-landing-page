@@ -1,21 +1,34 @@
 import data from "./data.json";
+import * as CourseStyles from "../../styles/Courses.style";
 
 export const Courses = () => {
   const courses = data.map((item) => {
     return (
-      <li key={item.id} aria-label={`Course-${item.id}`}>
-        <img src={item.image} alt="" role="presentation"></img>
-        <h3>{item.title}</h3>
-        <p>{item.description}</p>
-        <a href="#course-list-section">Get Started</a>
-      </li>
+      <CourseStyles.ListItem key={item.id} aria-label={`Course-${item.id}`}>
+        <CourseStyles.Image
+          src={item.image}
+          alt=""
+          role="presentation"
+          width="56"
+          height="56"
+        ></CourseStyles.Image>
+        <CourseStyles.CourseTitle>{item.title}</CourseStyles.CourseTitle>
+        <CourseStyles.CourseDescription>
+          {item.description}
+        </CourseStyles.CourseDescription>
+        <CourseStyles.GetStartedLink href="#course-list-section">
+          Get Started
+        </CourseStyles.GetStartedLink>
+      </CourseStyles.ListItem>
     );
   });
 
   return (
-    <section id="course-list-section">
-      <h2>Check out our most popular courses!</h2>
-      <ul>{courses}</ul>
-    </section>
+    <CourseStyles.CourseListSection id="course-list-section">
+      <CourseStyles.Heading>
+        Check out our most popular courses!
+      </CourseStyles.Heading>
+      <CourseStyles.UnorderedList>{courses}</CourseStyles.UnorderedList>
+    </CourseStyles.CourseListSection>
   );
 };
