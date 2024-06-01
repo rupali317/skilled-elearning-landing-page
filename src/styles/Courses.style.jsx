@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { TABLET_WIDTH } from "../constants/Breakpoints";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const Heading = styled.h2`
   grid-area: Heading;
@@ -15,6 +15,13 @@ export const Heading = styled.h2`
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-l-3) var(--space-xs-3) var(--space-base-4)
       var(--space-base-4);
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-l);
+    border-radius: var(--border-radius-base);
+    padding: var(--space-l-4) var(--space-base-4);
   }
 `;
 
@@ -42,7 +49,21 @@ export const CourseListSection = styled.section`
     column-gap: var(--space-xxs-2);
     padding: var(--space-none) var(--space-l-1) var(--space-xl-3)
       var(--space-m-4);
-    grid-template-columns: max(21.4375rem) max(21.4375rem); /* 343px */
+    grid-template-columns: max(21.25rem) max(21.25rem); /* 340px */
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    grid-template-areas:
+      "Heading Animation Design"
+      "Photography Crypto Business";
+    row-gap: var(--space-l-3);
+    column-gap: var(--space-base-2);
+    padding: var(--space-none) var(--space-xxl-2) var(--space-xxl-1)
+      var(--space-xxl-2);
+    grid-template-columns: minmax(10rem, 21.875rem) minmax(10rem, 21.875rem) minmax(
+        10rem,
+        21.875rem
+      ); /* 350px */
   }
 `;
 
@@ -70,6 +91,11 @@ export const Item = styled.div`
       margin-bottom: var(--space-none);
     }
   }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    padding: var(--space-l-4) var(--space-base-4) var(--space-l-1);
+    border-radius: var(--border-radius-base);
+  }
 `;
 
 export const Image = styled.img`
@@ -83,6 +109,10 @@ export const CourseTitle = styled.h3`
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height-normal);
   color: var(--color-neutral-3);
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    font-size: var(--font-size-s);
+  }
 `;
 
 export const CourseDescription = styled.p`
@@ -90,6 +120,11 @@ export const CourseDescription = styled.p`
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-s);
   color: var(--color-neutral-4);
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    font-size: var(--font-size-xxs);
+    line-height: var(--line-height-base);
+  }
 `;
 
 export const GetStartedLink = styled.a`
@@ -102,5 +137,9 @@ export const GetStartedLink = styled.a`
 
   &:hover {
     color: var(--color-primary-2);
+  }
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    margin-top: var(--space-none);
   }
 `;

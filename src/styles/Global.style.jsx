@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { TABLET_WIDTH } from "../constants/Breakpoints";
+import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
     :root {
@@ -165,13 +165,6 @@ export const ResetStyles = createGlobalStyle`
         line-height: 1.1;
     }
 
-    /* Balance text wrapping on headings */
-    h1,
-    h2,
-    h3 {
-        text-wrap: balance;
-    }
-
     /* Avoid text overflows */
     h1,
     h2,
@@ -221,13 +214,23 @@ export const DefaultStyles = createGlobalStyle`
         background-color: var(--color-neutral-3);
     }
 
-    @media(min-width:${TABLET_WIDTH}) {
+    @media (min-width:${TABLET_WIDTH}) {
         header {
             padding: var(--space-s-1) var(--space-l-1) var(--space-xl-4) var(--space-m-4);
         }
 
         footer {
             padding: var(--space-m-1) var(--space-m-4) var(--space-m-1) var(--space-l-1);
+        }
+    }
+
+    @media (min-width: ${DESKTOP_WIDTH}) {
+        header {
+            padding: var(--space-s-1) var(--space-xxl-2) var(--space-xxl-4) var(--space-xxl-3);
+        }
+
+        footer {
+            padding: var(--space-base-4) var(--space-xxl-2);
         }
     }
 `;
