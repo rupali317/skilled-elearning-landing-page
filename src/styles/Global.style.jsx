@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { TABLET_WIDTH } from "../constants/Breakpoints";
 
 export const BaseStyles = createGlobalStyle`
     :root {
@@ -48,6 +49,7 @@ export const BaseStyles = createGlobalStyle`
         --space-xxs-4: 0.9375rem; /* 15px */
         --space-xxs-5: 0.125rem; /* 2px */
         --space-xxs-6: 0.5rem; /* 8px */
+        --space-xxs-7: 0.0625rem; /* 1px */
         --space-xs-1: 1rem; /* 16px */
         --space-xs-2: 1.1875rem; /* 19px */
         --space-xs-3: 1.3125rem; /* 21px */
@@ -211,11 +213,21 @@ export const DefaultStyles = createGlobalStyle`
     }
 
     header {
-        padding: var(--space-xs-1);
+        padding: var(--space-xs-1) var(--space-xs-1) var(--space-m-3);
     }
 
     footer {
         padding: var(--space-m-1) var(--space-xs-1);
         background-color: var(--color-neutral-3);
+    }
+
+    @media(min-width:${TABLET_WIDTH}) {
+        header {
+            padding: var(--space-s-1) var(--space-l-1) var(--space-xl-4) var(--space-m-4);
+        }
+
+        footer {
+            padding: var(--space-m-1) var(--space-m-4) var(--space-m-1) var(--space-l-1);
+        }
     }
 `;

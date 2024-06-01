@@ -4,7 +4,7 @@ import * as CourseStyles from "../../styles/Courses.style";
 export const Courses = () => {
   const courses = data.map((item) => {
     return (
-      <CourseStyles.ListItem
+      <CourseStyles.Item
         $title={item.title}
         key={item.id}
         aria-label={`Course-${item.id}`}
@@ -23,7 +23,7 @@ export const Courses = () => {
         <CourseStyles.GetStartedLink href="#course-list-section">
           Get Started
         </CourseStyles.GetStartedLink>
-      </CourseStyles.ListItem>
+      </CourseStyles.Item>
     );
   });
 
@@ -32,7 +32,7 @@ export const Courses = () => {
       <CourseStyles.Heading>
         Check out our most popular courses!
       </CourseStyles.Heading>
-      <CourseStyles.UnorderedList>{courses}</CourseStyles.UnorderedList>
+      {courses}
     </CourseStyles.CourseListSection>
   );
 };
