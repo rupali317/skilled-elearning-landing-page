@@ -13,9 +13,14 @@ export const Heading = styled.h2`
 `;
 
 export const UnorderedList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-l-1);
+  display: grid;
+  grid-template-areas:
+    "Animation"
+    "Design"
+    "Photography"
+    "Crypto"
+    "Business";
+  row-gap: var(--space-l-1);
   list-style-type: none;
 `;
 
@@ -24,6 +29,7 @@ export const CourseListSection = styled.section`
 `;
 
 export const ListItem = styled.li`
+  grid-area: ${(props) => props.$title};
   position: relative;
   border-radius: var(--border-radius-s);
   padding: var(--space-l-3) var(--space-base-1) var(--space-base-4)

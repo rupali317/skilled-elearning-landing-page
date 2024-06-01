@@ -4,7 +4,11 @@ import * as CourseStyles from "../../styles/Courses.style";
 export const Courses = () => {
   const courses = data.map((item) => {
     return (
-      <CourseStyles.ListItem key={item.id} aria-label={`Course-${item.id}`}>
+      <CourseStyles.ListItem
+        $title={item.title}
+        key={item.id}
+        aria-label={`Course-${item.id}`}
+      >
         <CourseStyles.Image
           src={item.image}
           alt=""

@@ -53,4 +53,5 @@ export const Picture = styled.picture`
 export const Image = styled.img`
   width: 20.4375rem; /* 327px */
   height: 18.8125rem; /* 301px */
+  margin-top: var(--space-xs-4);
 `;
