@@ -7,17 +7,17 @@ export const IntroductionSection = styled.section`
   flex-direction: column;
   gap: var(--space-s-1);
   margin: auto;
-  max-width: 21.4375rem; /* 343px */
+  max-width: 23.4375rem; /* 375px */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    max-width: 24.875rem; /* 398px */
+    max-width: 27.3125rem; /* 437px */
     padding: var(--space-none) var(--space-none) var(--space-xxl-5)
       var(--space-m-4);
     margin: initial;
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    max-width: 28.5625rem; /* 457px */
+    max-width: 38.875rem; /* 622px */
     padding: var(--space-none) var(--space-none) var(--space-xxl-6)
       var(--space-xxl-2);
     gap: var(--space-base-1);
