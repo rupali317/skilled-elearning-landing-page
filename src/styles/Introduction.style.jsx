@@ -98,6 +98,7 @@ export const MobileImage = styled.div`
   height: 18.8125rem; /* 301px */
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: var(--space-xs-4);
 
   @media (min-resolution: 192dpi) {
     background-image: url("/assets/image-hero-mobile@2x.webp");
@@ -121,12 +122,12 @@ export const TabletImage = styled.div`
     width: 40.044375rem; /* 640.71px */
     height: 40rem; /* 640px */
     background-size: contain;
-    background-position: 18rem 2rem;
+    background-position: 17.5rem 2rem;
     background-repeat: no-repeat;
     position: absolute;
     z-index: -1;
     right: 0;
-    transform: translateY(-40%);
+    transform: translateY(-44%);
   }
 
   @media (min-width: ${TABLET_WIDTH}) and (min-resolution: 192dpi) {

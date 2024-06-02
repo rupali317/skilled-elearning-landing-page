@@ -95,6 +95,7 @@ export const Item = styled.div`
   @media (min-width: ${DESKTOP_WIDTH}) {
     padding: var(--space-l-4) var(--space-base-4) var(--space-l-1);
     border-radius: var(--border-radius-base);
+    gap: var(--space-s-1);
   }
 `;
 

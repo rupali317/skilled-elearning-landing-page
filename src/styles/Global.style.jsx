@@ -82,7 +82,7 @@ export const BaseStyles = createGlobalStyle`
         --space-xxl-6: 15.625rem; /* 250px */
 
         /* Box shadow */
-        --box-shadow-1: 0rem 1.5625rem 3.125rem 0rem var(--color-secondary-3) /* 0px 25px 50px 0px */
+        --box-shadow-1: 0rem 1.5625rem 3.125rem 0rem var(--color-secondary-3); /* 0px 25px 50px 0px */
 
         /* Border radius */
         --border-radius-none: 0rem;
@@ -224,7 +224,7 @@ export const DefaultStyles = createGlobalStyle`
         }
 
         footer {
-            padding: var(--space-base-4) var(--space-xxl-2);
+            padding: var(--space-base-4) var(--space-xxl-2) var(--space-base-4) var(--space-xxl-3);
         }
     }
 `;
