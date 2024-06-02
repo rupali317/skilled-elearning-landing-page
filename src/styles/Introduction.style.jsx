@@ -71,7 +71,7 @@ export const GetStartedLink = styled.a`
     var(--space-m-3);
   border-radius: var(--border-radius-l);
   text-decoration: none;
-  max-width: 10.4375rem; /* 167px */
+  max-width: fit-content;
 
   &:hover {
     background: linear-gradient(
