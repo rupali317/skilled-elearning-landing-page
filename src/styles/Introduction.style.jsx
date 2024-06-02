@@ -44,7 +44,6 @@ export const Heading = styled.h1`
 export const Paragraph = styled.p`
   margin-top: var(--space-xxs-5);
   font-size: var(--font-size-xxxs);
-  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-s);
   color: var(--color-neutral-4);
   min-width: 21.4375rem; /* 343px */

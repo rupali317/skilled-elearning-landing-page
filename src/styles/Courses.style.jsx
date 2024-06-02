@@ -63,12 +63,12 @@ export const CourseListSection = styled.section`
     grid-template-columns: minmax(10rem, 21.875rem) minmax(10rem, 21.875rem) minmax(
         10rem,
         21.875rem
-      ); /* 350px */
+      ); /* 160px, 350px */
   }
 `;
 
 export const Item = styled.div`
-  grid-area: ${(props) => props.$title};
+  grid-area: ${(props) => props.$titleGridArea};
   position: relative;
   border-radius: var(--border-radius-s);
   padding: var(--space-l-3) var(--space-base-1) var(--space-base-4)
@@ -117,7 +117,6 @@ export const CourseTitle = styled.h3`
 
 export const CourseDescription = styled.p`
   font-size: var(--font-size-xxxs);
-  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-s);
   color: var(--color-neutral-4);
 

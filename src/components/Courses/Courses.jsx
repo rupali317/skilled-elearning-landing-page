@@ -5,7 +5,7 @@ export const Courses = () => {
   const courses = data.map((item) => {
     return (
       <CourseStyles.Item
-        $title={item.title}
+        $titleGridArea={item.title}
         key={item.id}
         aria-label={`Course-${item.id}`}
       >
