@@ -94,14 +94,14 @@ export const GetStartedLink = styled.a`
 
 export const MobileImage = styled.div`
   display: block;
-  background-image: url("/assets/image-hero-mobile.png");
+  background-image: url("/assets/image-hero-mobile.webp");
   width: 20.4375rem; /* 327px */
   height: 18.8125rem; /* 301px */
   background-size: contain;
   background-repeat: no-repeat;
 
   @media (min-resolution: 192dpi) {
-    background-image: url("/assets/image-hero-mobile@2x.png");
+    background-image: url("/assets/image-hero-mobile@2x.webp");
   }
 
   @media (min-width: ${TABLET_WIDTH}) {
@@ -117,7 +117,7 @@ export const TabletImage = styled.div`
   display: none;
 
   @media (min-width: ${TABLET_WIDTH}) {
-    background-image: url("/assets/image-hero-tablet.png");
+    background-image: url("/assets/image-hero-tablet.webp");
     display: block;
     width: 40.044375rem; /* 640.71px */
     height: 40rem; /* 640px */
@@ -132,7 +132,7 @@ export const TabletImage = styled.div`
 
   @media (min-width: ${TABLET_WIDTH}) and (min-resolution: 192dpi) {
     display: block;
-    background-image: url("/assets/image-hero-tablet@2x.png");
+    background-image: url("/assets/image-hero-tablet@2x.webp");
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
@@ -148,7 +148,7 @@ export const DesktopImage = styled.div`
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    background-image: url("/assets/image-hero-desktop.png");
+    background-image: url("/assets/image-hero-desktop.webp");
     display: block;
     width: 61.976875rem; /* 991.63px */
     height: 58.5575rem; /* 936.92px */
@@ -163,6 +163,6 @@ export const DesktopImage = styled.div`
 
   @media (min-width: ${DESKTOP_WIDTH}) and (min-resolution: 192dpi) {
     display: block;
-    background-image: url("/assets/image-hero-desktop@2x.png");
+    background-image: url("/assets/image-hero-desktop@2x.webp");
   }
 `;
