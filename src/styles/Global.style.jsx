@@ -4,7 +4,7 @@ import { DESKTOP_WIDTH, TABLET_WIDTH } from "../constants/Breakpoints";
 export const BaseStyles = createGlobalStyle`
     :root {
         /* Colors */
-        --color-primary-1: hsl(341, 92%, 62%); /* #F74780 */
+        --color-primary-1: hsl(341, 61%, 48%); /* #C5305F */
         --color-primary-2: hsl(341, 100%, 83%); /* #FFA7C3 */
         --color-primary-3: hsl(322, 87%, 55%); /* #F02AA6 */
         --color-secondary-1: hsl(13, 100%, 64%); /* #FF6F48 */
@@ -13,7 +13,7 @@ export const BaseStyles = createGlobalStyle`
         --color-neutral-1: hsl(0, 0%, 100%); /* #FFFFFF */
         --color-neutral-2: hsl(234, 100%, 97%); /* #F0F1FF */
         --color-neutral-3: hsl(234, 53%, 16%); /* #13183F */
-        --color-neutral-4: hsl(233, 10%, 56%); /* #83869A */
+        --color-neutral-4: hsl(233, 10%, 44%); /* #65687B */
         --color-neutral-5: hsl(234, 25%, 52%); /* #666CA3 */
         --color-neutral-6: hsl(0, 0%, 100%, 0.5); /* #FFFFFF opacity 50% */
 
