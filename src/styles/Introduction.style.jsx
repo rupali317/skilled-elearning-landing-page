@@ -10,19 +10,17 @@ export const IntroductionSection = styled.section`
   max-width: 21.4375rem; /* 343px */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    min-width: 24.875rem; /* 398px */
-    margin: initial;
+    max-width: 24.875rem; /* 398px */
     padding: var(--space-none) var(--space-none) var(--space-xxl-5)
       var(--space-m-4);
-    max-width: initial;
+    margin: initial;
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
-    min-width: 28.5625rem; /* 457px */
+    max-width: 28.5625rem; /* 457px */
     padding: var(--space-none) var(--space-none) var(--space-xxl-6)
       var(--space-xxl-2);
     gap: var(--space-base-1);
-    max-width: initial;
   }
 `;
 
@@ -31,15 +29,15 @@ export const Heading = styled.h1`
   font-weight: var(--font-weight-extra-bold);
   line-height: var(--line-height-normal);
   color: var(--color-neutral-3);
-  max-width: 21.4375rem; /* 343px */
+  min-width: 21.4375rem; /* 343px */
 
   @media (min-width: ${TABLET_WIDTH}) {
-    max-width: 24.875rem; /* 398px */
+    min-width: 24.875rem; /* 398px */
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
     font-size: var(--font-size-xxl);
-    max-width: 28.5625rem; /* 457px */
+    min-width: 28.5625rem; /* 457px */
   }
 `;
 
@@ -49,18 +47,18 @@ export const Paragraph = styled.p`
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-s);
   color: var(--color-neutral-4);
-  max-width: 21.4375rem; /* 343px */
+  min-width: 21.4375rem; /* 343px */
 
   @media (min-width: ${TABLET_WIDTH}) {
     margin-top: var(--space-xxs-7);
-    max-width: 24.875rem; /* 398px */
+    min-width: 24.875rem; /* 398px */
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
     font-size: var(--font-size-xxs);
     line-height: var(--line-height-base);
     margin-top: var(--space-none);
-    max-width: 28.5625rem; /* 457px */
+    min-width: 28.5625rem; /* 457px */
   }
 `;
 
