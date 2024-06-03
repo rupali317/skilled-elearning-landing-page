@@ -36,9 +36,10 @@ export const CourseListSection = styled.section`
     "Crypto"
     "Business";
   row-gap: var(--space-l-1);
-  padding: var(--space-none) var(--space-xs-1) var(--space-none);
+  padding: var(--space-none) var(--space-xs-1) var(--space-xl-2);
   justify-content: center;
   grid-template-columns: max(21.4375rem); /* 343px */
+  grid-template-rows: min(7.5rem) repeat(5, min(16.1875rem)); /* 120px, 5 * 259px */
 
   @media (min-width: ${TABLET_WIDTH}) {
     grid-template-areas:
@@ -50,6 +51,7 @@ export const CourseListSection = styled.section`
     padding: var(--space-none) var(--space-l-1) var(--space-xl-3)
       var(--space-m-4);
     grid-template-columns: max(21.25rem) max(21.25rem); /* 340px */
+    grid-template-rows: repeat(3, min(16.1875rem)); /* 259px */
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
@@ -64,6 +66,7 @@ export const CourseListSection = styled.section`
         10rem,
         21.875rem
       ); /* 160px, 350px */
+    grid-template-rows: repeat(2, min(20.125rem)); /* 322px */
   }
 `;
 
@@ -77,19 +80,11 @@ export const Item = styled.div`
   box-shadow: var(--box-shadow-1);
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs-1);
-
-  &:last-of-type {
-    margin-bottom: var(--space-xl-2);
-  }
+  justify-content: space-between;
 
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-l-3) var(--space-xs-4) var(--space-base-4)
       var(--space-base-4);
-
-    &:last-of-type {
-      margin-bottom: var(--space-none);
-    }
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
