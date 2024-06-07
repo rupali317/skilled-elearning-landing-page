@@ -51,7 +51,7 @@ export const CourseListSection = styled.section`
     padding: var(--space-none) var(--space-l-1) var(--space-xl-3)
       var(--space-m-4);
     grid-template-columns: max(21.25rem) max(21.25rem); /* 340px */
-    grid-template-rows: repeat(3, min(16.1875rem)); /* 259px */
+    grid-template-rows: repeat(3, min(16.1875rem)); /* 3 * 259px */
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
@@ -65,8 +65,8 @@ export const CourseListSection = styled.section`
     grid-template-columns: minmax(10rem, 21.875rem) minmax(10rem, 21.875rem) minmax(
         10rem,
         21.875rem
-      ); /* 160px, 350px */
-    grid-template-rows: repeat(2, min(20.125rem)); /* 322px */
+      ); /* 160px to 350px */
+    grid-template-rows: repeat(2, min(21.625rem)); /* 346px */
   }
 `;
 
