@@ -99,6 +99,8 @@ export const MobileImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: var(--space-xs-4);
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-resolution: 192dpi) {
     background-image: url("/assets/image-hero-mobile@2x.webp");

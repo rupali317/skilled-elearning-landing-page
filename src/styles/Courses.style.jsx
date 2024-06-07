@@ -25,6 +25,12 @@ export const Heading = styled.h2`
   }
 `;
 
+export const CourseInformation = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s-1);
+`;
+
 export const CourseListSection = styled.section`
   background: linear-gradient(var(--color-neutral-1), var(--color-neutral-2));
   display: grid;
@@ -39,7 +45,6 @@ export const CourseListSection = styled.section`
   padding: var(--space-none) var(--space-xs-1) var(--space-xl-2);
   justify-content: center;
   grid-template-columns: max(21.4375rem); /* 343px */
-  grid-template-rows: min(7.5rem) repeat(5, min(16.1875rem)); /* 120px, 5 * 259px */
 
   @media (min-width: ${TABLET_WIDTH}) {
     grid-template-areas:
@@ -51,7 +56,6 @@ export const CourseListSection = styled.section`
     padding: var(--space-none) var(--space-l-1) var(--space-xl-3)
       var(--space-m-4);
     grid-template-columns: max(21.25rem) max(21.25rem); /* 340px */
-    grid-template-rows: repeat(3, min(16.1875rem)); /* 3 * 259px */
   }
 
   @media (min-width: ${DESKTOP_WIDTH}) {
@@ -66,7 +70,6 @@ export const CourseListSection = styled.section`
         10rem,
         21.875rem
       ); /* 160px to 350px */
-    grid-template-rows: repeat(2, min(21.625rem)); /* 346px */
   }
 `;
 

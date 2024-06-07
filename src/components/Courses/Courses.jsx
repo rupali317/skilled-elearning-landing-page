@@ -16,10 +16,12 @@ export const Courses = () => {
           width="56"
           height="56"
         ></CourseStyles.Image>
-        <CourseStyles.CourseTitle>{item.title}</CourseStyles.CourseTitle>
-        <CourseStyles.CourseDescription>
-          {item.description}
-        </CourseStyles.CourseDescription>
+        <CourseStyles.CourseInformation>
+          <CourseStyles.CourseTitle>{item.title}</CourseStyles.CourseTitle>
+          <CourseStyles.CourseDescription>
+            {item.description}
+          </CourseStyles.CourseDescription>
+        </CourseStyles.CourseInformation>
         <CourseStyles.GetStartedLink href="#course-list-section">
           Get Started
         </CourseStyles.GetStartedLink>
