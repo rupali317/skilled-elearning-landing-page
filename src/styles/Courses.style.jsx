@@ -28,7 +28,11 @@ export const Heading = styled.h2`
 export const CourseInformation = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--space-s-1);
+  gap: var(--space-xs-1);
+
+  @media (min-width: ${DESKTOP_WIDTH}) {
+    gap: var(--space-s-1);
+  }
 `;
 
 export const CourseListSection = styled.section`
@@ -84,6 +88,7 @@ export const Item = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: var(--space-s-1);
 
   @media (min-width: ${TABLET_WIDTH}) {
     padding: var(--space-l-3) var(--space-xs-4) var(--space-base-4)
