@@ -32,15 +32,15 @@ Users should be able to:
 
 ##### 1. Desktop version
 
-![Skilled elearning landing page desktop](./public/assets/screenshots/Skilled-elearning-landing-page-desktop.png)
+![Skilled elearning landing page desktop](./public/screenshots/Skilled-elearning-landing-page-desktop.png)
 
 ##### 2. Tablet version
 
-![Skilled elearning landing page tablet](./public/assets/screenshots/Skilled-elearning-landing-page-tablet.png)
+![Skilled elearning landing page tablet](./public/screenshots/Skilled-elearning-landing-page-tablet.png)
 
 ##### 3. Mobile version
 
-![Skilled elearning landing page mobile](./public/assets/screenshots/Skilled-elearning-landing-page-mobile.png)
+![Skilled elearning landing page mobile](./public/screenshots/Skilled-elearning-landing-page-mobile.png)
 
 ### PageSpeed Insights results
 
