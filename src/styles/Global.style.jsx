@@ -208,6 +208,21 @@ export const DefaultStyles = createGlobalStyle`
         background-color: var(--color-neutral-3);
     }
 
+    .skip-link {
+        position: absolute;
+        top: -3rem;
+        font-size: var(--font-size-xxs);
+        font-weight: var(--font-weight-bold);
+        line-height: var(--line-height-base);
+        color: var(--color-primary-1);
+        text-decoration: none;
+        transition: top 0.3s ease;
+    }
+
+    .skip-link:focus {
+        top: 0px
+    }
+
     @media (min-width:${TABLET_WIDTH}) {
         header {
             padding: var(--space-s-1) var(--space-l-1) var(--space-xl-4) var(--space-m-4);
